@@ -30,9 +30,6 @@ RUN apt-get update \
         bash-completion \
         procps \
         whois \
-    && wget https://ftp.hp.com/pub/softlib/software13/printers/SS/SL-C4010ND/uld_V1.00.39_01.17.tar.gz 
-    && tar -xzf uld_V1.00.39_01.17.tar.gz && cd uld
-    && sudo ./install.sh
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
